@@ -1,4 +1,4 @@
-function Home() {
+function Gallery() {
     return (
         <div>
             Gallery Page
@@ -6,4 +6,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Gallery;

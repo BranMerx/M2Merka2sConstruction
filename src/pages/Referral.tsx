@@ -1,4 +1,4 @@
-function Home() {
+function Referral() {
     return (
         <div>
             Referral Page
@@ -6,4 +6,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Referral;
