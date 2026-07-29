@@ -1,8 +1,11 @@
 function Services() {
+    const services = ["Drywall", "Tile", "Showers", "Painting", "Framing", "Basement Finish", "Outdoor Patios", "Pergolas"];
     return (
-        <div>
-            Services Page
-        </div>
+        <ul>
+            {services.map((service, index) => (
+                <li key = {index}>{service}</li>
+            ))}
+        </ul>
     );
 }
 
