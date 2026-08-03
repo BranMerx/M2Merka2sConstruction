@@ -22,7 +22,7 @@ function ReferralForm() {
     function handleSubmit(e: React.FormEvent){
         e.preventDefault();
         console.log(formData);
-        alert("Estimate requestsubmitted!");
+        alert("Estimate request submitted!");
     }
 
     return(
