@@ -1,32 +1,60 @@
 import { useState } from "react";
 import "./ReferralForm.css";
+import { submitReferral } from "../../services/referralService";
 
 function ReferralForm() {
     const [formData, setFormData] = useState({
-        firstName:"",
-        lastName:"",
-        phone:"",
-        email:"",
-        service:"",
-});
+        firstName: "",
+        lastName: "",
+        phone: "",
+        email: "",
+        service: "",
+    });
+
+    const [loading, setLoading] = useState(false);
+    const [message, setMessage] = useState("");
 
     function handleChange(
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ){
+    ) {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value,
         });
     }
 
-    function handleSubmit(e: React.FormEvent){
+    async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
-        console.log(formData);
-        alert("Estimate request submitted!");
+
+        setLoading(true);
+        setMessage("");
+
+        try {
+            await submitReferral(formData);
+
+            setMessage("✅ Thank you! Your estimate request has been submitted.");
+
+            setFormData({
+                firstName: "",
+                lastName: "",
+                phone: "",
+                email: "",
+                service: "",
+            });
+        } catch (error) {
+            if (error instanceof Error) {
+                setMessage(`❌ ${error.message}`);
+            } else {
+                setMessage("❌ Something went wrong.");
+            }
+        } finally {
+            setLoading(false);
+        }
     }
 
-    return(
-        <form className = "referral-form" onSubmit={handleSubmit}>
+    return (
+        <form className="referral-form" onSubmit={handleSubmit}>
+
             <label>First Name</label>
             <input
                 type="text"
@@ -73,12 +101,18 @@ function ReferralForm() {
                 required
             />
 
-            <button type="submit">
-                Request Free Estimate
-            </button>            
+            <button type="submit" disabled={loading}>
+                {loading ? "Submitting..." : "Request Free Estimate"}
+            </button>
+
+            {message && (
+                <p className="submission-message">
+                    {message}
+                </p>
+            )}
+
         </form>
     );
-
 }
 
 export default ReferralForm;
