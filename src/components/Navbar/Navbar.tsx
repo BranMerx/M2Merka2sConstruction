@@ -3,10 +3,10 @@ import "./Navbar.css";
 
 function Navbar(){
     return(
-        <header className = "navBar">
+        <header className = "navbar">
             <div className="navbar-logo">
                 <NavLink to ="/">
-                M2 Merka2s Construction
+                M2Merka2s Construction
                 </NavLink>
             </div>
             <nav>

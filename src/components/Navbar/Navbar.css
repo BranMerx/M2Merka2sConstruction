@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 18px 50px;
-    background-color: white;
+    background-color: rgb(20,18,18);
     box-shadow: 0 2px 8px rgba(0,0,0,.08);
 
 }
@@ -16,7 +16,7 @@
     text-decoration: none;
     font-size: 1.7rem;
     font-weight: bold;
-    color: #1e293b;
+    color: #ecead4;
 
 }
 
@@ -31,22 +31,22 @@
 
 .navbar-links a {
     text-decoration: none;
-    color: #374151;
+    color: #d5d7dc;
     font-weight: 500;
     transition: color .25s;
 }
 
 .navbar-links a:hover {
-    color: #2563eb;
+    color: #ebca25;
 }
 
 .navbar-links a.active {
-    color: #2563eb;
+    color: #ebca25;
     font-weight: 700;
 }
 
 .estimate-button {
-    background: #2563eb;
+    background: #ebca25;
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
@@ -56,5 +56,5 @@
 }
 
 .estimate-button:hover {
-    background: #1d4ed8;
+    background: #ebca25;
 }

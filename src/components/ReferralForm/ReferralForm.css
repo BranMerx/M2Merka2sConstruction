@@ -31,7 +31,7 @@
 
     border: none;
 
-    background: #2563eb;
+    background: #ebca25;
     color: white;
 
     border-radius: 8px;
@@ -43,7 +43,7 @@
 }
 
 .referral-form button:hover {
-    background: #1d4ed8;
+    background: #ebca25;
 }
 .submission-message {
     margin-top: 20px;
