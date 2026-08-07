@@ -3,7 +3,7 @@ function Services() {
     const services = ["Drywall", "Tile", "Showers", "Painting", "Framing", "Basement Finish", "Outdoor Patios", "Pergolas"];
     return (
         <div>
-            <h1>These are some common services we provide:</h1>
+            <h1>List of Common Services Provided:</h1>
             <ul className="list-services">
                 {services.map((service, index) => (
                     <li key = {index}>{service}</li>
