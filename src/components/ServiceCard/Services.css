@@ -1,0 +1,9 @@
+.list-services{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-services li{
+    font-weight:bold;
+}
