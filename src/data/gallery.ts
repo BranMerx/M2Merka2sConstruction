@@ -5,6 +5,8 @@ import pillar from "../assets/gallery/Pillar.jpeg"
 import shower from "../assets/gallery/Shower.jpeg"
 import stairs from "../assets/gallery/Stairs.jpeg"
 import wall from "../assets/gallery/Wall.jpeg"
+import fireplace from "../assets/gallery/Fireplace.jpg"
+import pillars from "../assets/gallery/Pillars.jpg"
 
 export const galleryImages = [
     {
@@ -41,5 +43,15 @@ export const galleryImages = [
         id: 7,
         title: "Accent Wall",
         image: wall,
+    },
+        {
+        id: 8,
+        title:"Fireplace",
+        image: fireplace,
+    },
+        {
+        id: 9,
+        title:"Pillars",
+        image: pillars,
     },
 ];
