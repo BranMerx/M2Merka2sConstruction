@@ -37,16 +37,16 @@
 }
 
 .navbar-links a:hover {
-    color: #ebca25;
+    color: #d4af37;
 }
 
 .navbar-links a.active {
-    color: #ebca25;
+    color: #d4af37;
     font-weight: 700;
 }
 
 .estimate-button {
-    background: #ebca25;
+    background: #d4af37;
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
@@ -56,5 +56,5 @@
 }
 
 .estimate-button:hover {
-    background: #ebca25;
+    background: #d4af37;
 }

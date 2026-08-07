@@ -1,7 +1,12 @@
+import logo from "../assets/logo/M2 Merka2s Construction Logo.png"
 function About() {
     return (
         <div>
             <h1>This is Us:</h1>
+            <img src={logo} 
+                alt="Company Logo" 
+                style={{border: '4px solid #d4af37', borderRadius:'8px'}}
+                width="400"/>
             <p>We are a family-run and founded carpentry business located in the village of Romeo, Michigan. We are
             ecstatic to meet the communities that surround us and help you in any of our carpentry endeavors. 
             We have many years of experience in a variety of areas such as drywall, showers, painting, framing,

@@ -3,11 +3,11 @@ import logo from '../assets/logo/M2 Merka2s Construction Logo.png'
 function Home() {
     return (
         <div>
+            <h1>Welcome to M2 Merka2s Construction</h1>
             <img src={logo} 
                 alt="Company Logo" 
-                style={{border: '4px solid #ebca25', borderRadius:'8px'}}
-                width="200"/>
-            <h1>Welcome to M2 Merka2s Construction</h1>
+                style={{border: '4px solid #d4af37', borderRadius:'8px'}}
+                width="400"/>
             <h2>Built On Trust. Built By Family. Built To Last.</h2>
             <h2>A Family Business You can Trust.</h2>
             <h3>Contact Information:</h3>
