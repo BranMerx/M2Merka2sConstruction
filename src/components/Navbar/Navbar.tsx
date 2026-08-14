@@ -1,30 +1,63 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar(){
-    return(
-        <header className = "navbar">
+function Navbar() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    function closeMenu() {
+        setMenuOpen(false);
+    }
+
+    return (
+        <header className="navbar">
             <div className="navbar-logo">
-                <NavLink to ="/">
-                M2Merka2s Construction
+                <NavLink to="/" onClick={closeMenu}>
+                    M2 Merka2s Construction
                 </NavLink>
             </div>
-            <nav>
+
+            <button
+                className="menu-toggle"
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Toggle navigation menu"
+                aria-expanded={menuOpen}
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav className={menuOpen ? "nav-open" : ""}>
                 <ul className="navbar-links">
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/" onClick={closeMenu}>
+                            Home
+                        </NavLink>
                     </li>
+
                     <li>
-                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/about" onClick={closeMenu}>
+                            About
+                        </NavLink>
                     </li>
+
                     <li>
-                        <NavLink to="/services">Services</NavLink>
+                        <NavLink to="/services" onClick={closeMenu}>
+                            Services
+                        </NavLink>
                     </li>
+
                     <li>
-                        <NavLink to="/gallery">Gallery</NavLink>
+                        <NavLink to="/gallery" onClick={closeMenu}>
+                            Gallery
+                        </NavLink>
                     </li>
+
                     <li>
-                        <NavLink to="/referral">Referral</NavLink>
+                        <NavLink to="/referral" onClick={closeMenu}>
+                            Free Estimate
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
