@@ -1,4 +1,4 @@
-import chimney_owner from "../assets/gallery/Chimney_With_Owner.jpeg";
+import Owner_and_son from "../assets/logo/M2 Owner and Son.jpg";
 import "../styles/About.css";
 
 function About() {
@@ -30,8 +30,8 @@ function About() {
 
                 <div className="about-image">
                     <img
-                        src={chimney_owner}
-                        alt="Chimney Construction With Owner"
+                        src={Owner_and_son}
+                        alt="Owner_and_son"
                     />
                 </div>
             </div>
