@@ -1,20 +1,40 @@
-import logo from "../assets/logo/M2 Merka2s Construction Logo.png"
+import chimney_owner from "../assets/gallery/Chimney_With_Owner.jpeg";
+import "../styles/About.css";
+
 function About() {
     return (
-        <div>
-            <h1>This is Us:</h1>
-            <img src={logo} 
-                alt="Company Logo" 
-                style={{border: '4px solid #d4af37', borderRadius:'8px'}}
-                width="400"/>
-            <p>We are a family-run and founded carpentry business located in the village of Romeo, Michigan. We are
-            ecstatic to meet the communities that surround us and help you in any of our carpentry endeavors. 
-            We have many years of experience in a variety of areas such as drywall, showers, painting, framing,
-            and others just to name a few. Even if we can not help you with a specific project, we for sure can
-            help you find someone who can!</p>
-            <p>Whether you are looking to start a project, need help finishing one, or are just shopping around for,
-            we want to help. We are located in Macomb County and are eager to assist our customers located in the 
-            surrounding areas. We are a registered and insured company. Please do not hesitate to reach out!</p>
+        <div className="about-container">
+            <div className="about-content">
+                <div className="about-text">
+                    <p>
+                        Our owner's name is Arturo Mercado-Cancino. He started
+                        M2 Merka2s Construction as a company to offer his
+                        carpentry expertise to help those in our community and
+                        surrounding areas achieve their home renovation goals.
+                        Our company is located in Macomb County, specifically
+                        in the village of Romeo. However, we also service those
+                        in Oakland County and hopefully will be able to expand
+                        even further one day in the future.
+                    </p>
+
+                    <p>
+                        Whether you are looking to start a new project, need
+                        help finishing one, or are just shopping around for
+                        pricing, we would like to help. We are a registered and
+                        insured company. Take advantage of our free consultation
+                        offer, and someone from our team will reach out to set
+                        up an appointment to discuss the project, associated
+                        costs, and desired results.
+                    </p>
+                </div>
+
+                <div className="about-image">
+                    <img
+                        src={chimney_owner}
+                        alt="Chimney Construction With Owner"
+                    />
+                </div>
+            </div>
         </div>
     );
 }
