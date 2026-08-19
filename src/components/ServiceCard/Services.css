@@ -1,9 +1,38 @@
-.list-services{
+.services-container {
+    text-align: center;
+}
+
+.services-logo {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #d4af37;
+    border-radius: 8px;
+}
+
+.services-lists {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.service-list {
+    text-align: left;
+}
+
+.service-list h2 {
+    text-align: left;
+    margin-left: 0;
+}
+
+.service-list ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.list-services li{
-    font-weight:bold;
+.service-list li {
+    font-weight: bold;
+    margin: 8px 0;
 }
