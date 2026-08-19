@@ -15,9 +15,12 @@ function Home() {
             <h2>Built On Trust. Built By Family. Built To Last.</h2>
             <h2>A Family Business You Can Trust.</h2>
 
-            <h3>Contact Information:</h3>
-            <h3>586-894-3206</h3>
-            <h3>lobitoman1@live.com</h3>
+            <div className='contact-info'>
+                <h3>Contact Information:</h3>
+                <p>586-894-3206</p>
+                <p>info@m2merka2sconstruction.com</p>
+                
+            </div>
         </div>
     );
 }

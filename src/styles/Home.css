@@ -9,3 +9,15 @@
     border: 4px solid #d4af37;
     border-radius: 8px;
 }
+
+.contact-info {
+    margin-top: 25px;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
