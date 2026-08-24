@@ -51,8 +51,10 @@ function Services() {
                     </ul>
                 </div>
             </div>
-
-            <h2>These services and many more!</h2>
+            <div className ="additional-info">
+                <h2>We offer these services and many more!</h2>
+                <p>Once final pricing is agreed upon, a 30% non-refundable down payment will be required.</p>
+            </div>
         </div>
     );
 }
