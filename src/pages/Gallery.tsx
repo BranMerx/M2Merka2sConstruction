@@ -7,6 +7,11 @@ function Gallery() {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [zoom, setZoom] = useState(1);
 
+    // Get each unique category from galleryImages
+    const categories = Array.from(
+        new Set(galleryImages.map((image) => image.category))
+    );
+
     function openImage(image: string) {
         setSelectedImage(image);
         setZoom(1);
@@ -18,28 +23,66 @@ function Gallery() {
     }
 
     function zoomIn() {
-        setZoom((currentZoom) => Math.min(currentZoom + 0.25, 3));
+        setZoom((currentZoom) =>
+            Math.min(currentZoom + 0.25, 3)
+        );
     }
 
     function zoomOut() {
-        setZoom((currentZoom) => Math.max(currentZoom - 0.25, 1));
+        setZoom((currentZoom) =>
+            Math.max(currentZoom - 0.25, 1)
+        );
     }
 
     return (
         <>
-            <section className="gallery">
-                {galleryImages.map((image) => (
-                    <GalleryCard
-                        key={image.id}
-                        image={image.image}
-                        title={image.title}
-                        onClick={() => openImage(image.image)}
-                    />
-                ))}
-            </section>
+            <main className="gallery-page">
 
+                {/* Gallery Header */}
+                <section className="gallery-header">
+                    <h1>Our Work</h1>
+                    <p>
+                        Explore some of our completed construction
+                        and remodeling projects.
+                    </p>
+                </section>
+
+                {/* Categories */}
+                {categories.map((category) => {
+                    const categoryImages = galleryImages.filter(
+                        (image) => image.category === category
+                    );
+
+                    return (
+                        <section
+                            className="gallery-category"
+                            key={category}
+                        >
+                            <h2>{category}</h2>
+
+                            <div className="gallery">
+                                {categoryImages.map((image) => (
+                                    <GalleryCard
+                                        key={image.id}
+                                        image={image.image}
+                                        title={image.title}
+                                        onClick={() =>
+                                            openImage(image.image)
+                                        }
+                                    />
+                                ))}
+                            </div>
+                        </section>
+                    );
+                })}
+            </main>
+
+            {/* Lightbox */}
             {selectedImage && (
-                <div className="lightbox" onClick={closeImage}>
+                <div
+                    className="lightbox"
+                    onClick={closeImage}
+                >
                     <button
                         className="lightbox-close"
                         onClick={closeImage}
@@ -50,7 +93,9 @@ function Gallery() {
 
                     <div
                         className="lightbox-content"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e) =>
+                            e.stopPropagation()
+                        }
                     >
                         <img
                             src={selectedImage}
