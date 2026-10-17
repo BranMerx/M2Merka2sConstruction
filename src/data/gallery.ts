@@ -9,7 +9,6 @@ import fireplace from "../assets/gallery/Fireplace.jpg"
 import pillars from "../assets/gallery/Pillars.jpg"
 import bathroom from "../assets/gallery/Bathroom.jpeg"
 import chimney_brick from "../assets/gallery/Chimney_Brick.jpeg"
-import chimney_arch from "../assets/gallery/Chimney_with_arch.jpeg"
 import deck from "../assets/gallery/Deck.jpeg"
 import second_deck from "../assets/gallery/Deck_2.jpeg"
 import deck_with_railing from "../assets/gallery/Deck_and_Railing.jpeg"
@@ -29,31 +28,31 @@ import arch from "../assets/gallery/Upclose_Arch.jpeg"
 export const galleryImages = [
     {
         id: 1,
-        title: "Finished Attic",
+        title: "Remodeled Attic",
         image: attic,
         category: "Indoor Finishings",
     },
         {
         id: 2,
-        title: "Basement Remodel",
+        title: "Remodeled Basement",
         image: basement,
         category:"Indoor Finishings",
     },
         {
         id: 3,
-        title: "Bathroom Countertops",
+        title: "Bathroom Countertops and Walls",
         image: counter,
         category: "Bathrooms",
     },
         {
         id: 4,
-        title: "Support Pillar",
+        title: "Decorative Pillars",
         image: pillar,
         category: "Support Structures",
     },
         {
         id: 5,
-        title: "Shower Remodel",
+        title: "Remodeled Shower",
         image: shower,
         category: "Bathrooms",
     },
@@ -77,115 +76,109 @@ export const galleryImages = [
     },
         {
         id: 9,
-        title:"Pillars",
+        title:"Support Pillars",
         image: pillars,
         category: "Support Structures",
     },
         {
         id: 10,
-        title:"Finished Bathroom",
+        title:"Remodeled Bathroom",
         image: bathroom,
         category:"Bathrooms",
     },
         {
         id: 11,
-        title:"Brick Veneer for Chimney",
+        title:"Brick Veneer",
         image: chimney_brick,
         category: "Stylings",
     },
         {
         id: 12,
-        title:"Chimney with Arch",
-        image: chimney_arch,
-        category: "Support Structures",
-    },
-        {
-        id: 13,
         title:"Outdoor Deck",
         image: deck,
         category:"Additional Structures",
     },
         {
-        id: 14,
+        id: 13,
         title:"Deck",
         image: second_deck,
         category:"Additional Structures",
     },
         {
-        id: 15,
+        id: 14,
         title:"Deck with Railing",
         image: deck_with_railing,
         category:"Additional Structures",
     },
         {
-        id: 16,
+        id: 15,
         title:"Downspouts",
         image: downspouts,
         category:"Downspouts",
     },
         {
-        id: 17,
+        id: 16,
         title:"Finished Fireplace",
         image: fireplace_install,
         category: "Fireplace",
     },
         {
-        id: 18,
+        id: 17,
         title:"Garage Flooring",
         image: garage_flooring,
         category: "Indoor Finishings",
     },
         {
-        id: 19,
+        id: 18,
         title:"Kitchen Cabinets",
         image: kitchen_cabinets,
         category: "Indoor Finishings",
     },
         {
-        id: 20,
+        id: 19,
         title:"Outdoor Maintenance",
         image: outdoor,
         category:"Maintenance",
     },
         {
-        id: 21,
+        id: 20,
         title:"Glass Railing",
         image: glass_railing,
         category: "Maintenance",
     },
         {
-        id: 22,
+        id: 21,
         title:"Peragola",
         image: peragola,
         category: "Additional Structures"
     },
         {
-        id: 23,
-        title:"Full Bathroom",
+        id: 22,
+        title:"Remodeled Shower",
         image: bathroom_shower_toilette,
         category: "Bathrooms",
     },
         {
-        id: 24,
-        title:"Shower Updates",
+        id: 23,
+        title:"Updated Shower",
         image: white_shower,
         category: "Bathrooms",
     },
         {
-        id: 25,
+        id: 24,
         title:"Staircase with Carpet",
         image: staircase_carpet,
         category: "Indoor Finishings",
     },
         {
-        id: 26,
+        id: 25,
         title:"Stone Veneer",
         image: stone_veneer,
         category: "Stylings",
     },
         {
-        id: 27,
-        title:"Arches",
+        id: 26,
+        title:"Archways",
         image: arch,
         category: "Support Structures",
     },
