@@ -1,4 +1,5 @@
 import Owner_and_son from "../assets/logo/M2 Owner and Son.jpg";
+import Working_Progress from "../assets/Progress_Images/Work in Progress.jpg";
 import "../styles/About.css";
 
 function About() {
@@ -17,6 +18,13 @@ function About() {
                         even further one day in the future.
                     </p>
 
+                    <div className = "about-image">
+                        <img
+                            src={Owner_and_son}
+                            alt="Owner_and_son"
+                        />
+                    </div>
+
                     <p>
                         Whether you are looking to start a new project, need
                         help finishing one, or are just shopping around for
@@ -26,13 +34,12 @@ function About() {
                         up an appointment to discuss the project, associated
                         costs, and desired results.
                     </p>
-                </div>
-
-                <div className="about-image">
-                    <img
-                        src={Owner_and_son}
-                        alt="Owner_and_son"
-                    />
+                    <div className = "Working-image">
+                        <img
+                            src={Working_Progress}
+                            alt = "Working in progress"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
